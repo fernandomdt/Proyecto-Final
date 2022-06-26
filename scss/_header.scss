@@ -1,0 +1,65 @@
+// HEADER DEL SITIO
+
+#header {
+    background-color: $beige-color;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px;
+}
+
+.headerLogo {
+    display: flex;
+}
+
+.header-nav {
+    background-color: $beige-color;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+}
+
+
+.navbar-toggler{
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.navbar-light .navbar-toggler{
+    border-color: none !important;
+
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.toggler-span button:hover {
+    background-color: none !important;
+}
+
+.nav-link {
+    text-align: left;
+}
+
+header a {
+    font-family: 'Rubik',Calibri,sans-serif;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: $black-color;
+    transition: 0.5s;
+}
+
+
+header a:hover {
+    text-decoration: underline;
+    color: rgb(150, 150, 150);
+}
+
+header ul {
+    list-style-type: none;
+    display:flex;
+    gap: 40px;
+}

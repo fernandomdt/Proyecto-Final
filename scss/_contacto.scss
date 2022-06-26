@@ -1,0 +1,123 @@
+// COMIENZA CÓDIGO CSS DE LA PÁGINA DE CONTACTO
+
+.Contacto-hero-image{
+    background-image: url("../Images/Contacto-img1.jpg");
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.ContactForm {
+    padding: 10% 0 0 0;
+    width:90%;
+    margin: 0 auto;
+}
+
+.contact-form {
+    padding: 20px 0 10% 0;
+}
+
+
+.InputForm {
+    width: 600px;
+    padding: 2% 2%;
+    background-color: #e5e5e5;
+    border: none;
+}
+
+.InputForm-textarea {
+    width: 600px;
+    padding: 2% 2%;
+    background-color: #e5e5e5;
+    border: none;
+    height: 150px;
+}
+
+.radio-form{
+    width:600px;
+    display: flex;
+    gap: 30px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.formButton{
+    width: 200px;
+    padding: 2%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    background-color: rgb(236, 223, 213);
+    color: rgb(0, 0, 0);
+    border: none;
+    transition: 0.5s;
+    float: left;
+}
+
+.formButton:hover{
+    background-color: rgb(51, 121, 65);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+.hombre-form {
+    width: 50%;
+    display: flex;
+    background-color: #e5e5e5;
+    padding: 2% 2%;
+    align-items: center;
+}
+
+.placeholder{
+    font-size: 13px;
+    text-align: left;
+}
+
+.form_main h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+} 
+.form {
+    border-radius: 7px;
+    padding: 6px;
+}
+.txt[type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 90%;
+}
+.txt_3[type="text"] {
+    margin: 10px 0 0;
+    padding: 10px 0 10px 5px;
+    width: 90%;
+}
+.txt2[type="submit"] {
+    background: #000000 none repeat scroll 0 0;
+    border: 1px solid #4f5c04;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 35px;
+    margin: 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 50%;
+}
+.txt2:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #000000;
+    transition: all 0.5s ease 0s;
+}
+
+.forma {
+    --bs-gutter-x: 0;
+}

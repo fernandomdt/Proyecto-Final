@@ -1,0 +1,32 @@
+// FOOTER DEL SITIO 
+
+.footer{
+    display: flex;
+    padding:3% 0 3% 0;
+    background-color: $beige-color;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.footer-container{
+    background-color: $beige-color;
+}
+
+.footer p{
+    padding-bottom: 0px;
+}
+
+.footer a:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+    .footer a:hover{
+        opacity: 0.2;
+    }
+
+.Social-logos{
+    display: flex;
+    gap:30px
+}

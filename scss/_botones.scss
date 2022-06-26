@@ -1,0 +1,36 @@
+// BOTONES DEL SITIO
+
+// VARIABLES SASS
+$beige-color: rgb(236, 223, 213);
+$black-color: rgb(0, 0, 0);
+$green-color: rgb(51, 121, 65);
+$white-color: rgb(255, 255, 255);
+$washed-color:rgb(181, 192, 183);
+$pantalla:rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5);
+
+%boton {
+    padding: 2%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    background-color: $beige-color;
+    color: $black-color;
+    border: none;
+    transition: 0.5s;
+}
+
+%pantalla-oscura {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+
+button{
+    width: 200px;
+    @extend %boton;
+} 
+
+    button:hover{
+        background-color: $green-color;
+        color: $white-color;
+        cursor: pointer;
+    }

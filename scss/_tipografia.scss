@@ -1,0 +1,77 @@
+// ESTILOS DE TIPOGRAFIAS
+
+%font-style {
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+h1 {
+    @extend %font-style; 
+    font-size: 60px;
+    font-weight: 100;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 5rem;
+}
+
+    @media screen and (max-width: 767px){
+        h1{
+            font-size: 40px;
+            font-weight: 80;
+            line-height: 4rem;
+        }
+    }
+
+h2 {
+    @extend %font-style; 
+    font-size: 40px;
+    font-weight:100;
+}
+
+    @media screen and (max-width: 767px){
+        h2{
+            font-size: 30px;
+            font-weight:90;
+        }
+    }
+
+h3 {
+    @extend %font-style;
+    font-size: 30px;
+    font-weight:200;
+}
+
+h4 {
+    @extend %font-style;
+    font-style: italic;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: left;
+    line-height: 2rem;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+    @media screen and (max-width: 767px){
+        p{
+            font-size: 13px;
+            line-height: 30px;
+            padding-bottom: 20px;
+            
+        }
+    }
+
+.span-italic{
+    font-style: italic;
+}
+
+.Centeredtext {
+    text-align: center;
+}

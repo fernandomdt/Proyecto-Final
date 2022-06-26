@@ -1,0 +1,137 @@
+// COMIENZA CODIGO DE LA PÁGINA BIOGRAFIA
+
+// SECCIÓN UNO DE BIOGRAFIA
+
+.BioBloque1{
+    display: flex;
+    flex-direction: column;
+}
+
+.Bio-img{
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Images/Biography-img1.jpg);
+    background-position:center;
+    padding:20%;
+}
+
+
+.Bio-Cabeza {
+    padding: 10% 0 0 0;
+    text-align: center;
+}
+    .Bio-Cabeza h1, img{
+        text-align: center;
+    }
+
+    @media screen and (max-width: 768px){
+        .Bio-Cabeza {
+            width: 80%;
+            padding: 15% 0 0 0;
+            margin: 0 auto;
+        }
+    }
+
+    
+.Bio-text {
+    width: 810px;
+    margin:0 auto;
+    padding-bottom: 100px;
+    padding-top: 5%;
+
+}
+
+    @media screen and (max-width: 768px){
+        .Bio-text {
+            width: 80%;
+            margin:0 auto;
+            padding-top: 10%;
+        
+        }
+    }
+
+
+.BioCabeza-img{
+    overflow: hidden;
+    background-image: url(../Images/Biography-img2.jpg);
+    width:66%;
+    height: 500px;
+    margin: 0 auto;
+    background-size:cover;
+    background-position: center center;
+    transition: transform .9s;
+    cursor: pointer;
+}
+
+.BioCabeza-img:hover{
+    transform: scale(1.12); 
+    filter: hue-rotate(235deg);
+}
+        @media screen and (max-width: 768px){
+            .BioCabeza-img{
+                width:80%;
+                height: 500px;
+            }
+            
+        }
+
+// SECCIÓN DOS DE BIOGRAFIA
+
+.quote {
+    background-color: $washed-color;
+}
+
+.QuoteSection{
+    background-color: $washed-color;
+    padding: 80px 0 80px 0;
+    width: 800px;
+}
+
+        @media screen and (max-width: 768px){
+            .QuoteSection{
+                padding: 10% 0 10% 0;
+                width: 90%;
+            }
+            
+        }
+
+        @media screen and (max-width: 500px){
+            .QuoteSection{
+                padding: 20% 0 20% 0;
+            }
+            
+        }
+
+// SECCION TRES DE BIOGRAFÍA
+
+.BioImageGllery {
+    gap: 20px;
+    justify-content: center;
+    padding: 2% 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.BioImageGllery img{
+    transition: transform .9s;
+}
+
+.BioImageGllery img:hover{
+    -ms-transform: scale(.9); /* IE 9 */
+    -webkit-transform: scale(.9); /* Safari 3-8 */
+    transform: scale(.9); 
+    filter: invert(100%);
+    
+}
+
+
+    @media screen and (max-width: 767px){
+        .BioImageGllery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5% 0 5% 0;
+        
+        }
+    }

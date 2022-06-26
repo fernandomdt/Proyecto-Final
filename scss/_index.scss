@@ -1,0 +1,182 @@
+// INICIA CÓDIGO DEL HOMEPAGE
+
+
+#hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-image {
+    background-image: linear-gradient($pantalla), url("../Images/Homepage-section1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: inherit;
+    display: flex;
+}
+
+.hero-image, .container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.hero-text {
+    color:white;
+    width: 500px;
+    padding: 20% 0 20% 0;
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+}
+
+    @media screen and (max-width: 768px){
+        .hero-text {
+            width: 80%;
+            padding: 30% 0 30% 10%;
+        }
+    }
+
+// SECCIÓN DOS DEL HOME
+
+.bloqueDos {
+    padding:10% 0 10% 0;
+    gap: 5%;
+}
+
+@media screen and (max-width: 768px){
+    .bloqueDos {
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+}
+
+
+.Imagen-BloqueDos img {
+    -webkit-filter: blur(3px);
+    filter: blur(8px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+
+.Imagen-BloqueDos img:hover {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}  
+
+.Texto-BloqueDos {
+    display: block;
+    width:600px;
+    margin-top: 10%;
+}
+
+
+// SECCIÓN TRES DEL HOME
+
+.BloqueTres{
+    background: linear-gradient(-55deg, #f7dcd4, #8dbea5, #f5b46a, #c1b5d7);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+    padding:10% 0 10% 0;
+}
+
+    @media screen and (max-width: 768px){
+        .BloqueTres{
+            padding:20% 0 20% 0;
+        }
+    }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.Section3texto{
+    width:600px;
+    margin: auto;
+}
+
+    .Section3texto p,h3 {
+        text-align: center;
+    }
+
+.Filmes{
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 5%;
+
+}
+
+.Filmes img{
+    transition: .3s ease-in-out;
+    cursor:pointer;
+}
+
+.Filmes img:hover{
+    transform: translateY(-7%);
+  }
+
+.Imagen-fixed {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: url("../Images/Lynch-fixed-home.png");
+    background-position: center;
+    background-size: cover;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+    right: 3%;
+    bottom: 3%;
+    cursor:pointer;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+
+@media screen and (max-width: 768px){
+    .Imagen-fixed {
+        display:none; 
+    }
+}
+
+// VIDEO FRAME
+
+.video{
+    height:700px; 
+    width:100%;
+}
+
+        @media screen and (max-width: 768px){
+            .video{
+                height:500px; 
+            }
+        }
+
+
+        @media screen and (max-width: 500px){
+            .video{
+                height:450px; 
+            }
+        }

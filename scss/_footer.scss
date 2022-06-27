@@ -5,7 +5,8 @@
     padding:3% 0 3% 0;
     background-color: $beige-color;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap:100px;
     box-sizing: border-box;
 }
 
@@ -15,6 +16,11 @@
 
 .footer p{
     padding-bottom: 0px;
+}
+
+.footer a{
+   color:$black-color;
+   text-decoration: none;
 }
 
 .footer a:hover{

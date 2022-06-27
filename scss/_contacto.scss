@@ -2,21 +2,16 @@
 
 .Contacto-hero-image{
     background-image: url("../Images/Contacto-img1.jpg");
-    height: 500px;
+    height: 350px;
     background-position: center center;
     background-size: cover;
 }
 
 .ContactForm {
-    padding: 10% 0 0 0;
+    padding: 5% 0 0 0;
     width:90%;
     margin: 0 auto;
 }
-
-.contact-form {
-    padding: 20px 0 10% 0;
-}
-
 
 .InputForm {
     width: 600px;
@@ -91,33 +86,43 @@
 .txt[type="text"] {
     border: 1px solid #ccc;
     margin: 10px 0;
-    padding: 10px 0 10px 5px;
+    padding: 10px 0 10px 10px;
     width: 90%;
 }
 .txt_3[type="text"] {
     margin: 10px 0 0;
-    padding: 10px 0 10px 5px;
+    padding: 10px 0 30px 10px;
     width: 90%;
 }
 .txt2[type="submit"] {
-    background: #000000 none repeat scroll 0 0;
-    border: 1px solid #4f5c04;
-    border-radius: 25px;
-    color: #fff;
+    background: $black-color none repeat scroll 0 0;
+    border: none;
+    color: $white-color;
     font-size: 16px;
     font-style: normal;
     line-height: 35px;
-    margin: 10px 0;
-    padding: 0;
+    margin-top: 20px;
+    padding: 10px;
     text-transform: uppercase;
     width: 50%;
 }
 .txt2:hover {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #000000;
+    background: $green-color none repeat scroll 0 0;
+    color: $white-color;
     transition: all 0.5s ease 0s;
 }
 
 .forma {
     --bs-gutter-x: 0;
+}
+
+.contacto-container {
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10%;
+}
+
+.ContactoImagen img{
+    width: 90%;
 }

@@ -40,8 +40,9 @@ h3 {
 
 h4 {
   font-style: italic;
-  font-size: 15px;
-  font-weight: bold; }
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 10px; }
 
 p {
   font-family: 'Rubik', sans-serif;
@@ -136,7 +137,8 @@ header ul {
   padding: 3% 0 3% 0;
   background-color: #ecdfd5;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
   box-sizing: border-box; }
 
 .footer-container {
@@ -144,6 +146,10 @@ header ul {
 
 .footer p {
   padding-bottom: 0px; }
+
+.footer a {
+  color: black;
+  text-decoration: none; }
 
 .footer a:hover {
   opacity: 0.5;
@@ -259,8 +265,8 @@ header ul {
   -webkit-animation: spin 2s linear infinite;
   -moz-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
-  right: 3%;
-  bottom: 3%;
+  right: 2%;
+  bottom: 6%;
   cursor: pointer; }
 
 @-moz-keyframes spin {
@@ -411,11 +417,15 @@ header ul {
     width: 85%;
     padding-top: 20%; } }
 
+.movies-grid {
+  margin: 0 auto;
+  padding: 80px 0 150px 0; }
+
 .FilmsRow {
   justify-content: center;
   gap: 20px;
   margin: 0 auto;
-  padding: 5% 0 3% 0; }
+  padding: 5% 0 2% 0; }
 
 @media screen and (max-width: 768px) {
   .FilmsRow {
@@ -425,6 +435,14 @@ header ul {
 
 .films-image {
   margin: 0 auto; }
+
+.films-image img {
+  transition: .3s ease-in-out;
+  cursor: pointer; }
+
+.films-image img:hover {
+  opacity: .7;
+  transform: translateY(-4%); }
 
 .Obra-Hero {
   background-color: #b5c0b7;
@@ -442,6 +460,11 @@ header ul {
 @media screen and (max-width: 500px) {
   .Obra-Hero-text {
     width: 70%; } }
+
+.Container-BloqueDos {
+  margin: 0 auto;
+  justify-content: center;
+  gap: 5%; }
 
 .ObraImagen-BloqueDos {
   padding: 10% 0 10% 0;
@@ -488,17 +511,14 @@ header ul {
 
 .Contacto-hero-image {
   background-image: url("../Images/Contacto-img1.jpg");
-  height: 500px;
+  height: 350px;
   background-position: center center;
   background-size: cover; }
 
 .ContactForm {
-  padding: 10% 0 0 0;
+  padding: 5% 0 0 0;
   width: 90%;
   margin: 0 auto; }
-
-.contact-form {
-  padding: 20px 0 10% 0; }
 
 .InputForm {
   width: 600px;
@@ -565,34 +585,42 @@ header ul {
 .txt[type="text"] {
   border: 1px solid #ccc;
   margin: 10px 0;
-  padding: 10px 0 10px 5px;
+  padding: 10px 0 10px 10px;
   width: 90%; }
 
 .txt_3[type="text"] {
   margin: 10px 0 0;
-  padding: 10px 0 10px 5px;
+  padding: 10px 0 30px 10px;
   width: 90%; }
 
 .txt2[type="submit"] {
-  background: #000000 none repeat scroll 0 0;
-  border: 1px solid #4f5c04;
-  border-radius: 25px;
-  color: #fff;
+  background: black none repeat scroll 0 0;
+  border: none;
+  color: white;
   font-size: 16px;
   font-style: normal;
   line-height: 35px;
-  margin: 10px 0;
-  padding: 0;
+  margin-top: 20px;
+  padding: 10px;
   text-transform: uppercase;
   width: 50%; }
 
 .txt2:hover {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #000000;
+  background: #337941 none repeat scroll 0 0;
+  color: white;
   transition: all 0.5s ease 0s; }
 
 .forma {
   --bs-gutter-x: 0; }
+
+.contacto-container {
+  margin: 0 auto;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 10%; }
+
+.ContactoImagen img {
+  width: 90%; }
 
 @media screen and (max-width: 768px) {
   #header {
@@ -630,4 +658,11 @@ header ul {
   .footer p {
     text-align: center; }
   .fixed-image {
-    display: none; } }
+    display: none; }
+  .contacto-container {
+    flex-direction: column;
+    gap: 100px; }
+  .ContactoImagen {
+    margin: 0 auto; }
+  .ContactoImagen img {
+    width: 400px; } }

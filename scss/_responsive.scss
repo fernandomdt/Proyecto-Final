@@ -63,5 +63,19 @@
     .fixed-image {
         display: none;
     }
+
+    .contacto-container {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .ContactoImagen {
+        margin: 0 auto;
+    }
+
+    .ContactoImagen img{
+        width: 400px;
+    }
+    
     
 }

@@ -45,8 +45,9 @@ h3 {
 h4 {
     @extend %font-style;
     font-style: italic;
-    font-size: 15px;
+    font-size: 17px;
     font-weight:bold;
+    padding-top: 10px;
 }
 
 p {
